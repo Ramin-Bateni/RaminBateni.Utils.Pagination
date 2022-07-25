@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Authors>Ramin Bateni Parvar</Authors>
+    <Description>By this so simple extension you can easily get your query result as paged from database or memory.
+
+Just call it like this:
+
+var pagedResult = _context.Set&lt;Label&gt;()
+      .Include(x =&gt; x.Article)
+      .Where(x =&gt; x.CollectionId == 2)
+      .OrderBy(x=&gt; x.Labeld)
+      .AsPagedToListAsync(page: 5, pageSize: 20);
+
+Now pagedResult provide you these info:
+List&lt;T&gt; Items
+int     CurrentPage
+int     PageCount
+int     PageSize
+int     RowCount
+int     FirstRowOnPage
+int     LastRowOnPage
+
+If you have any questions or suggestions please leave a message in the repo of this package in GitHub as issue.</Description>
+    <Copyright>MIT</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>
