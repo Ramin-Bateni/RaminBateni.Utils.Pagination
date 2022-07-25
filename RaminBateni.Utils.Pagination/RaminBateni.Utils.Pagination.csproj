@@ -23,11 +23,39 @@ int     FirstRowOnPage
 int     LastRowOnPage
 
 If you have any questions or suggestions please leave a message in the repo of this package in GitHub as issue.</Description>
-    <Copyright>MIT</Copyright>
+    <Copyright></Copyright>
+    <PackageIcon>R-Icon.jpg</PackageIcon>
+    <RepositoryUrl>https://github.com/Ramin-Bateni/RaminBateni.Utils.Pagination</RepositoryUrl>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageTags>Paged, Pagination, Paging, Entity Framework, Queryable, List</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\R-Icon.jpg" />
+    <None Remove="Assets\R-Icon.jpg" />
+    <None Include="Assets\R-Icon.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\R-Icon.jpg" Link="Assets\R-Icon.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\" />
   </ItemGroup>
 
 </Project>
